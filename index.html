@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwar Gonzalez | Portafolio</title>
+    <meta name="description" content="Portafolio profesional de Edwar Gonzalez, estudiante de Ingeniería de Sistemas, desarrollador y redes.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div id="cursor-glow"></div>
+
+    <header>
+        <nav>
+            <div class="logo">EDGR<span>.dev</span></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="hero-bg">
+                <div class="hero-glow"></div>
+                <div class="hero-grid"></div>
+            </div>
+            <div class="hero-content">
+                <p class="hero-greeting reveal">Hola, soy</p>
+                <h1 class="reveal"><span>Edwar Agustin</span><br>Gonzalez Requejo</h1>
+                <h2 class="reveal">Estudiante de Ingeniería de Sistemas | Desarrollador & Redes</h2>
+                <p class="reveal">Construyo soluciones de software, diseño arquitecturas web seguras y configuro infraestructuras de red eficientes.</p>
+                <div class="hero-buttons reveal">
+                    <a href="#proyectos" class="btn primary">Ver proyectos</a>
+                    <a href="assets/CV_Edwar_Gonzalez_Requejo.pdf" class="btn secondary" target="_blank"><i class="fas fa-download"></i> Descargar CV</a>
+                </div>
+                <div class="hero-social reveal">
+                    <a href="https://github.com/edwargreoz/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/edwar-agustín-gonzález-requejo-577956420" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:gonzalzedwar@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"><div class="wheel"></div></div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-badge">Acerca de</span>
+                    <h2>Sobre mí</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <p>Soy un estudiante universitario de Ingeniería de Sistemas en constante aprendizaje. Me apasiona resolver problemas complejos a través de la tecnología. Tengo experiencia trabajando con entornos virtuales, desarrollo orientado a objetos, arquitecturas MVC y configuración de redes.</p>
+                    </div>
+                    <div class="about-stats reveal">
+                        <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Proyectos</span></div>
+                        <div class="stat"><span class="stat-num">5</span><span class="stat-label">Tecnologías</span></div>
+                        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Frameworks</span></div>
+                    </div>
+                </div>
+                <div class="skills reveal">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">PHP (MVC)</span>
+                    <span class="skill-tag">C# / Unity</span>
+                    <span class="skill-tag">Cisco (Routing/DHCP)</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">Django 5</span>
+                    <span class="skill-tag">Laravel 11</span>
+                    <span class="skill-tag">Go</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-badge">Portafolio</span>
+                    <h2>Proyectos Destacados</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="project-grid">
+
+                    <div class="project-card reveal">
+                        <div class="project-info">
+                            <span class="project-type">Desarrollo Web Full-Stack</span>
+                            <h3>FairBet - Plataforma Educativa de Apuestas</h3>
+                            <p>Plataforma de apuestas deportivas con moneda virtual. Sistema contable de partida doble con integridad SHA-256, cuotas en tiempo real vía WebSocket.</p>
+                            <div class="project-tech">
+                                <span>Django 5</span><span>DRF</span><span>Channels</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small"><i class="fab fa-github"></i> Ver Repositorio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-info">
+                            <span class="project-type">Ingeniería de Software</span>
+                            <h3>Motor de Consultas SQL en Memoria</h3>
+                            <p>Intérprete SQL en Go que carga datos desde CSV y ejecuta consultas en memoria usando el modelo Volcano. Soporta JOINs, GROUP BY, agregación, ORDER BY y EXPLAIN.</p>
+                            <div class="project-tech">
+                                <span>Go</span><span>Lexer/Parser</span><span>AST</span><span>Hash Join</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small"><i class="fab fa-github"></i> Ver Repositorio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-info">
+                            <span class="project-type">Arquitectura Hexagonal</span>
+                            <h3>Sistema de Gestión de Restaurante</h3>
+                            <p>Sistema integral con mesas, pedidos, cocina en tiempo real (KDS), caja, inventario con recetas y reservas. WebSocket para actualización del plano del restaurante.</p>
+                            <div class="project-tech">
+                                <span>Django 5</span><span>DRF</span><span>Channels</span><span>WebSocket</span><span>PostgreSQL</span><span>Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small"><i class="fab fa-github"></i> Ver Repositorio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-info">
+                            <span class="project-type">Marketplace</span>
+                            <h3>H-Films - Marketplace de Streaming</h3>
+                            <p>Plataforma de venta de cuentas de streaming con sistema de créditos, pagos vía Yape con verificación, panel de administración custom y tema dark con animaciones.</p>
+                            <div class="project-tech">
+                                <span>Django 5</span><span>PostgreSQL</span><span>Bootstrap 5</span><span>Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small"><i class="fab fa-github"></i> Ver Repositorio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-info">
+                            <span class="project-type">Gestión de Citas</span>
+                            <h3>Sistema de Citas Odontológicas</h3>
+                            <p>Sistema de gestión de citas para consultorio dental con calendarización, prevención de conflictos, importación masiva desde Excel, dashboard con gráficas y roles.</p>
+                            <div class="project-tech">
+                                <span>Laravel 11</span><span>MySQL</span><span>Blade</span><span>Chart.js</span><span>Vite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small"><i class="fab fa-github"></i> Ver Repositorio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-info">
+                            <span class="project-type">Logística</span>
+                            <h3>Sistema de Encomiendas</h3>
+                            <p>Plataforma de gestión de envíos con códigos de rastreo automáticos, cálculo de costos por peso y ruta, historial de estados con auditoría y dashboard operativo.</p>
+                            <div class="project-tech">
+                                <span>Django 5</span><span>DRF</span><span>PostgreSQL</span><span>Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small"><i class="fab fa-github"></i> Ver Repositorio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-info">
+                            <span class="project-type">MVC & Seguridad</span>
+                            <h3>Sistema de Facturación de Agua</h3>
+                            <p>Sistema de facturación y control de pagos de agua potable para municipalidad. MVC propio, patrón Repository, hashing Argon2id, protección CSRF y XSS, desplegado en cPanel.</p>
+                            <div class="project-tech">
+                                <span>PHP 8.2</span><span>MVC Custom</span><span>MySQL</span><span>Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small"><i class="fab fa-github"></i> Ver Repositorio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal">
+                        <div class="project-info">
+                            <span class="project-type">Gestión Comercial</span>
+                            <h3>Importaciones Panda - Sistema ERP</h3>
+                            <p>Plataforma ERP para importaciones con gestión de proveedores, catálogo con stock mínimo, movimientos de inventario, compra/venta con cálculo automático de IGV 18%.</p>
+                            <div class="project-tech">
+                                <span>Django 5</span><span>PostgreSQL</span><span>Nginx</span><span>Docker</span><span>PgAdmin</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small"><i class="fab fa-github"></i> Ver Repositorio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-badge">Contacto</span>
+                    <h2>¿Trabajamos juntos?</h2>
+                    <div class="divider"></div>
+                </div>
+                <p class="contact-subtitle reveal">Actualmente busco oportunidades para aplicar mis conocimientos en desarrollo y redes.</p>
+                <div class="contact-content reveal">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:gonzalzedwar@gmail.com">gonzalzedwar@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/edwargreoz/" target="_blank">@edwargreoz</a>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin-in"></i>
+                        <h3>LinkedIn</h3>
+                        <a href="https://linkedin.com/in/edwar-agustín-gonzález-requejo-577956420" target="_blank">Edwar Gonzalez</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">EDGR<span>.dev</span></div>
+            <p>&copy; 2026 Edwar Gonzalez. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="https://github.com/edwargreoz/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/edwar-agustín-gonzález-requejo-577956420" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:gonzalzedwar@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Scroll reveal animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Back to top
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('show', window.scrollY > 400);
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Cursor glow
+        const glow = document.getElementById('cursor-glow');
+        document.addEventListener('mousemove', (e) => {
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+            glow.style.transform = 'translate(-50%, -50%)';
+        });
+    </script>
+
+</body>
+</html>
